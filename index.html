@@ -1,0 +1,349 @@
+<!-- BeatBook — explainer site. A KARYA studio build. -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BeatBook — Cover the beat, collect the dues.</title>
+  <meta name="description" content="BeatBook plans a distributor salesman's daily beat, captures orders per visit, and keeps a running outstanding per retailer. Rs 599/mo.">
+  <meta name="theme-color" content="#0891B2">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav" id="top">
+  <a class="nav__brand" href="#top" aria-label="BeatBook home">
+    <svg class="nav__mark" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 20 L9 6 L14 16 L20 4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="4" cy="20" r="2.1" fill="currentColor"/>
+      <circle cx="9" cy="6" r="2.1" fill="currentColor"/>
+      <circle cx="14" cy="16" r="2.1" fill="currentColor"/>
+      <circle cx="20" cy="4" r="2.1" fill="currentColor"/>
+    </svg>
+    <span>BeatBook</span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#problem">Problem</a>
+    <a href="#how">How it works</a>
+    <a href="#features">Features</a>
+    <a href="#preview">Preview</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+  <a href="#pricing" class="btn btn--sm nav__cta">Start the beat</a>
+</header>
+
+<main>
+
+  <!-- 1. HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Beat planning &amp; dues, for route sales</p>
+        <h1 id="hero-title">Cover the beat,<br><span class="hl">collect the dues.</span></h1>
+        <p class="hero__lede">
+          Every day your salesman walks a route of shops and every day a little money
+          slips through the cracks. BeatBook plans today&rsquo;s beat, captures the order at each
+          shop, and keeps a running <em>outstanding</em> per retailer &mdash; so nothing is left on a diary page.
+        </p>
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn--lg">Start the beat &mdash; Rs 599/mo</a>
+          <a href="#how" class="btn btn--ghost btn--lg">See how it works</a>
+        </div>
+        <p class="hero__note">No app-store maze. Works on the phone in his pocket.</p>
+      </div>
+
+      <!-- Signature: the live "beat strip" — a walked route of stops -->
+      <div class="hero__beat" aria-hidden="true">
+        <div class="beatcard">
+          <div class="beatcard__top">
+            <span class="beatcard__day">Today &middot; Mon</span>
+            <span class="beatcard__area">Beat: Koramangala 5th Blk</span>
+          </div>
+          <ol class="beat">
+            <li class="beat__stop is-done"><span class="beat__pin">1</span><span class="beat__name">Sri Balaji Stores</span><span class="beat__amt paid">+ Rs 4,200</span></li>
+            <li class="beat__stop is-done"><span class="beat__pin">2</span><span class="beat__name">New Ganesh Kirana</span><span class="beat__amt paid">+ Rs 1,850</span></li>
+            <li class="beat__stop is-now"><span class="beat__pin">3</span><span class="beat__name">Ayesha Medical</span><span class="beat__amt due">Rs 6,300 due</span></li>
+            <li class="beat__stop"><span class="beat__pin">4</span><span class="beat__name">Laxmi Provision</span><span class="beat__amt">planned</span></li>
+            <li class="beat__stop"><span class="beat__pin">5</span><span class="beat__name">Star Super Mart</span><span class="beat__amt">planned</span></li>
+          </ol>
+          <div class="beatcard__foot">
+            <span><strong class="mono">2/5</strong> visited</span>
+            <span class="dot"></span>
+            <span><strong class="mono">40%</strong> coverage</span>
+            <span class="dot"></span>
+            <span><strong class="mono">Rs 6,050</strong> collected</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. THE PROBLEM -->
+  <section class="section" id="problem" aria-labelledby="problem-title">
+    <div class="stop-head">
+      <span class="stop-num">Stop 01</span>
+      <h2 id="problem-title">The route is real. The record isn&rsquo;t.</h2>
+    </div>
+    <div class="prose-lead">
+      <p>
+        A distributor salesman or route-sales rep does the same honest thing every day:
+        walk a fixed set of shops, take orders, and chase what&rsquo;s owed. The problem was never
+        the walking. It&rsquo;s that <strong>the record of the day lives in three broken places.</strong>
+      </p>
+    </div>
+    <ul class="pain">
+      <li class="pain__item">
+        <span class="pain__tag">The diary</span>
+        <p>Yesterday&rsquo;s dues are on a page he has to flip back to find. Ink smudges. A page tears. The book stays in the bag when the boss asks for numbers.</p>
+      </li>
+      <li class="pain__item">
+        <span class="pain__tag">WhatsApp</span>
+        <p>Orders and &ldquo;paid 2000 sir&rdquo; float in a chat that scrolls away. No shop-wise total, no closing balance &mdash; just messages nobody can add up at day end.</p>
+      </li>
+      <li class="pain__item">
+        <span class="pain__tag">Memory</span>
+        <p>&ldquo;Balaji still owes something&hellip; I think.&rdquo; The outstanding lives in one person&rsquo;s head. He&rsquo;s off sick, and the route goes blind.</p>
+      </li>
+    </ul>
+    <p class="pain__punch">
+      So dues age quietly, a shop gets skipped, and at month-end nobody can say who owes what.
+      The money isn&rsquo;t lost to fraud &mdash; it&rsquo;s lost to <em>not being written down in one place.</em>
+    </p>
+  </section>
+
+  <!-- 3. THE INSIGHT -->
+  <section class="insight" id="insight" aria-labelledby="insight-title">
+    <div class="insight__inner">
+      <span class="stop-num stop-num--light">Stop 02 &middot; The wedge</span>
+      <h2 id="insight-title" class="insight__line">
+        A salesman&rsquo;s day is two things at once: a <span class="u">route</span> of shops,
+        and a <span class="u">ledger</span> of dues. Software keeps treating them separately. BeatBook is the one book that keeps both &mdash; the beat and the balance &mdash; on the same page.
+      </h2>
+      <p class="insight__sub">
+        Plan the beat by the day of the week. Capture the order at the visit. Let the visit move
+        the balance. That&rsquo;s the whole product, and it&rsquo;s exactly how the job already works.
+      </p>
+    </div>
+  </section>
+
+  <!-- 4. HOW IT WORKS -->
+  <section class="section" id="how" aria-labelledby="how-title">
+    <div class="stop-head">
+      <span class="stop-num">Stop 03</span>
+      <h2 id="how-title">Four steps, and it&rsquo;s the day he already has.</h2>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="step__n mono">1</span>
+        <h3>Today&rsquo;s beat builds itself</h3>
+        <p>Each retailer has a <em>beat day</em>. Open the app and today&rsquo;s list is every shop whose beat day is today &mdash; already in route order. No planning meeting.</p>
+      </li>
+      <li class="step">
+        <span class="step__n mono">2</span>
+        <h3>Capture the order at the visit</h3>
+        <p>At each shop, punch the order. The amount is added to that retailer&rsquo;s outstanding on the spot &mdash; the balance moves as the day moves.</p>
+      </li>
+      <li class="step">
+        <span class="step__n mono">3</span>
+        <h3>Log the collection, dues drop</h3>
+        <p>He collects Rs 2,000 from Balaji? Enter it and Balaji&rsquo;s outstanding falls by exactly that. The running balance is always current, never end-of-day guesswork.</p>
+      </li>
+      <li class="step">
+        <span class="step__n mono">4</span>
+        <h3>Close the day with one glance</h3>
+        <p>Planned vs visited, coverage %, total outstanding, today&rsquo;s collection &mdash; the coverage and collection reports write themselves from the visits.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 5. FEATURES -->
+  <section class="section section--tint" id="features" aria-labelledby="features-title">
+    <div class="stop-head">
+      <span class="stop-num">Stop 04</span>
+      <h2 id="features-title">Six things it does, all from the same day&rsquo;s work.</h2>
+    </div>
+    <div class="features">
+      <article class="feat">
+        <h3>Daily beat plan</h3>
+        <p>Today&rsquo;s route = every retailer whose <em>beat_day</em> matches today. Auto-built, in order, no setup.</p>
+      </article>
+      <article class="feat">
+        <h3>Order capture per visit</h3>
+        <p>Each order booked at a shop adds straight to that retailer&rsquo;s outstanding. One tap, no separate ledger entry.</p>
+      </article>
+      <article class="feat">
+        <h3>Running outstanding</h3>
+        <p>Every retailer carries a live balance &mdash; orders push it up, collections pull it down. Always in sync.</p>
+      </article>
+      <article class="feat">
+        <h3>Collections</h3>
+        <p>Log what he collected at each stop. The retailer&rsquo;s dues fall by exactly that amount, then and there.</p>
+      </article>
+      <article class="feat">
+        <h3>Coverage report</h3>
+        <p>Planned vs actually visited, as a clean percentage. Know which shops got skipped before the week ends.</p>
+      </article>
+      <article class="feat">
+        <h3>Collection summary</h3>
+        <p>Day and route totals of money collected, shop-wise. The number the boss actually asks for, ready.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 6. PRODUCT PREVIEW -->
+  <section class="section" id="preview" aria-labelledby="preview-title">
+    <div class="stop-head">
+      <span class="stop-num">Stop 05</span>
+      <h2 id="preview-title">The dashboard he opens at 9 a.m.</h2>
+      <p class="stop-sub">Tap a stop to visit it &mdash; watch coverage climb and outstanding fall, live.</p>
+    </div>
+
+    <div class="device" role="group" aria-label="BeatBook dashboard preview">
+      <div class="device__bar">
+        <span class="device__dot"></span><span class="device__dot"></span><span class="device__dot"></span>
+        <span class="device__title">BeatBook &middot; Ramesh K. &middot; Koramangala route</span>
+      </div>
+      <div class="app">
+        <div class="app__head">
+          <div>
+            <p class="app__eyebrow">Monday &middot; 19 Jul</p>
+            <h3 class="app__h">Today&rsquo;s beat</h3>
+          </div>
+          <span class="badge">5 shops planned</span>
+        </div>
+
+        <!-- KPI row -->
+        <div class="kpis">
+          <div class="kpi">
+            <span class="kpi__label">Coverage</span>
+            <span class="kpi__val mono" id="kpiCoverage">40%</span>
+            <div class="kpi__bar"><i id="kpiBar" style="width:40%"></i></div>
+          </div>
+          <div class="kpi">
+            <span class="kpi__label">Total outstanding</span>
+            <span class="kpi__val mono" id="kpiDue">Rs 18,650</span>
+          </div>
+          <div class="kpi">
+            <span class="kpi__label">Collected today</span>
+            <span class="kpi__val mono kpi__val--in" id="kpiColl">Rs 6,050</span>
+          </div>
+        </div>
+
+        <!-- Beat list -->
+        <ul class="visits" id="visits">
+          <li class="visit is-done">
+            <span class="visit__pin">1</span>
+            <span class="visit__body"><strong>Sri Balaji Stores</strong><small>5th Block &middot; kirana</small></span>
+            <span class="visit__due mono">Rs 0</span>
+            <span class="visit__state">Visited</span>
+          </li>
+          <li class="visit is-done">
+            <span class="visit__pin">2</span>
+            <span class="visit__body"><strong>New Ganesh Kirana</strong><small>80 Ft Rd &middot; kirana</small></span>
+            <span class="visit__due mono">Rs 2,400</span>
+            <span class="visit__state">Visited</span>
+          </li>
+          <li class="visit" data-due="6300" data-collect="6300">
+            <span class="visit__pin">3</span>
+            <span class="visit__body"><strong>Ayesha Medical</strong><small>1st Cross &middot; pharmacy</small></span>
+            <span class="visit__due mono">Rs 6,300</span>
+            <button class="visit__btn" type="button">Collect &amp; visit</button>
+          </li>
+          <li class="visit" data-due="5100" data-collect="5100">
+            <span class="visit__pin">4</span>
+            <span class="visit__body"><strong>Laxmi Provision</strong><small>7th Main &middot; provision</small></span>
+            <span class="visit__due mono">Rs 5,100</span>
+            <button class="visit__btn" type="button">Collect &amp; visit</button>
+          </li>
+          <li class="visit" data-due="4850" data-collect="4850">
+            <span class="visit__pin">5</span>
+            <span class="visit__body"><strong>Star Super Mart</strong><small>6th Block &middot; retail</small></span>
+            <span class="visit__due mono">Rs 4,850</span>
+            <button class="visit__btn" type="button">Collect &amp; visit</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="preview__cap">Sample data. Real names and areas shown for illustration.</p>
+  </section>
+
+  <!-- 7. PRICING -->
+  <section class="section section--ink" id="pricing" aria-labelledby="pricing-title">
+    <div class="pricing">
+      <div class="pricing__copy">
+        <span class="stop-num stop-num--light">Stop 06 &middot; Pricing</span>
+        <h2 id="pricing-title">One price. Per salesman. Per route.</h2>
+        <p>
+          Recover a <em>single</em> forgotten Rs 600 due in a month and BeatBook has already paid for itself.
+          Most reps carry dozens of open balances at once &mdash; the report alone stops the slow bleed.
+        </p>
+        <ul class="pricing__list">
+          <li>Unlimited retailers and daily beats</li>
+          <li>Running outstanding on every shop</li>
+          <li>Coverage &amp; collection reports, every day</li>
+          <li>Works on his existing Android phone</li>
+        </ul>
+      </div>
+      <div class="pricecard">
+        <p class="pricecard__plan">BeatBook</p>
+        <p class="pricecard__price"><span class="pricecard__cur">Rs</span><span class="pricecard__num mono">599</span></p>
+        <p class="pricecard__per">per salesman / month</p>
+        <a href="mailto:sreeni.nintendo@gmail.com?subject=BeatBook%20trial" class="btn btn--lg btn--block">Start the beat</a>
+        <p class="pricecard__fine">No card to try. Cancel anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. WHO IT'S FOR + FAQ -->
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="who">
+      <div class="who__side">
+        <h2 id="faq-title">Built for the man on the route.</h2>
+        <p class="who__lead">If your day is a fixed list of shops and a set of balances to keep straight, BeatBook is yours.</p>
+        <ul class="who__tags">
+          <li>Distributor salesmen (FMCG, groceries)</li>
+          <li>Route-sales reps &amp; van sales</li>
+          <li>Pharma &amp; medical distributor reps</li>
+          <li>Beverage &amp; ice-cream route sellers</li>
+        </ul>
+      </div>
+      <div class="faq">
+        <details class="qa" open>
+          <summary>Does he need to plan the route every morning?</summary>
+          <p>No. Each shop is tagged with a beat day when you add it. Today&rsquo;s beat is simply every shop whose beat day is today &mdash; it&rsquo;s ready when he opens the app.</p>
+        </details>
+        <details class="qa">
+          <summary>How does the outstanding stay correct?</summary>
+          <p>It moves with the work. Booking an order adds to a retailer&rsquo;s outstanding; logging a collection subtracts from it. There&rsquo;s no separate ledger to reconcile at night.</p>
+        </details>
+        <details class="qa">
+          <summary>What does the owner see at day end?</summary>
+          <p>Coverage (planned vs visited), total outstanding across the route, and the day&rsquo;s collection &mdash; shop-wise. The two reports the boss asks for, without anyone tallying a diary.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 20 L9 6 L14 16 L20 4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="4" cy="20" r="2.1" fill="currentColor"/><circle cx="9" cy="6" r="2.1" fill="currentColor"/>
+        <circle cx="14" cy="16" r="2.1" fill="currentColor"/><circle cx="20" cy="4" r="2.1" fill="currentColor"/>
+      </svg>
+      <span>BeatBook</span>
+      <span class="footer__tag">Cover the beat, collect the dues.</span>
+    </div>
+    <div class="footer__meta">
+      <a href="mailto:sreeni.nintendo@gmail.com">sreeni.nintendo@gmail.com</a>
+      <span class="footer__studio">A KARYA studio build</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
