@@ -20,7 +20,7 @@ outstanding per retailer.
 - **Collection summary** — day/route totals of money collected.
 - **Dashboard** — today's beat list, coverage %, total outstanding, today's collection.
 
-Pricing: **Rs 599 / salesman / month.**
+Pricing: **on discovery — a simple monthly subscription, sized to your route.**
 
 ## Files
 

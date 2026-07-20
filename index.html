@@ -1,14 +1,131 @@
 <!-- BeatBook — explainer site. A KARYA studio build. -->
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BeatBook — Cover the beat, collect the dues.</title>
-  <meta name="description" content="BeatBook plans a distributor salesman's daily beat, captures orders per visit, and keeps a running outstanding per retailer. Rs 599/mo.">
+  <title>BeatBook — beat &amp; dues app for route sales</title>
+  <meta name="description" content="BeatBook: a distributor beat app for sales route management — daily beats, order booking per visit and live retailer outstanding for van sales India. See how.">
+  <meta name="keywords" content="distributor beat app, sales route management, order booking app, retailer outstanding, van sales India">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <link rel="canonical" href="https://sreenivas-sadhu-prabhakara.github.io/beatbook-site/">
   <meta name="theme-color" content="#0891B2">
+  <meta name="author" content="KARYA">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KARYA">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="BeatBook — beat &amp; dues app for route sales">
+  <meta property="og:description" content="A distributor beat app for sales route management: auto-built daily beats, order booking per visit, and live retailer outstanding for van sales India.">
+  <meta property="og:url" content="https://sreenivas-sadhu-prabhakara.github.io/beatbook-site/">
+  <meta property="og:image" content="https://sreenivas-sadhu-prabhakara.github.io/beatbook-site/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BeatBook — cover the beat, collect the dues. A KARYA studio build.">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BeatBook — beat &amp; dues app for route sales">
+  <meta name="twitter:description" content="A distributor beat app for sales route management: auto-built daily beats, order booking per visit, and live retailer outstanding for van sales India.">
+  <meta name="twitter:image" content="https://sreenivas-sadhu-prabhakara.github.io/beatbook-site/og.png">
+
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="https://sreenivas-sadhu-prabhakara.github.io/beatbook-site/og.png">
   <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "KARYA",
+        "url": "https://kaarya-bench.pages.dev/",
+        "email": "sreeni.nintendo@gmail.com"
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://sreenivas-sadhu-prabhakara.github.io/beatbook-site/",
+        "name": "BeatBook",
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "BeatBook",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://sreenivas-sadhu-prabhakara.github.io/beatbook-site/",
+        "image": "https://sreenivas-sadhu-prabhakara.github.io/beatbook-site/og.png",
+        "description": "A distributor beat app for sales route management: auto-built daily beats, order booking per visit, and live retailer outstanding for van sales in India.",
+        "inLanguage": ["en-IN", "hi-IN"],
+        "areaServed": { "@type": "Country", "name": "India" },
+        "audience": { "@type": "BusinessAudience" },
+        "provider": { "@type": "Organization", "name": "KARYA" },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "description": "Subscription — pricing shared on a discovery call"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does he need to plan the route every morning?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Each shop is tagged with a beat day when you add it. Today's beat is simply every shop whose beat day is today — it's ready when he opens the app."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the outstanding stay correct?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It moves with the work. Booking an order adds to a retailer's outstanding; logging a collection subtracts from it. There's no separate ledger to reconcile at night."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the owner see at day end?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Coverage (planned vs visited), total outstanding across the route, and the day's collection — shop-wise. The two reports the boss asks for, without anyone tallying a diary."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does BeatBook cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pricing is worked out on a quick discovery call and billed monthly on subscription. We're keeping public prices off the page while we onboard our first users."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "KARYA On the Bench",
+            "item": "https://kaarya-bench.pages.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BeatBook",
+            "item": "https://sreenivas-sadhu-prabhakara.github.io/beatbook-site/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <header class="nav" id="top">
@@ -29,7 +146,7 @@
     <a href="#preview">Preview</a>
     <a href="#pricing">Pricing</a>
   </nav>
-  <a href="#pricing" class="btn btn--sm nav__cta">Start the beat</a>
+  <a href="mailto:sreeni.nintendo@gmail.com?subject=Discovery%20call%20—%20BeatBook" class="btn btn--sm nav__cta">Book a discovery call</a>
 </header>
 
 <main>
@@ -46,10 +163,10 @@
           shop, and keeps a running <em>outstanding</em> per retailer &mdash; so nothing is left on a diary page.
         </p>
         <div class="hero__actions">
-          <a href="#pricing" class="btn btn--lg">Start the beat &mdash; Rs 599/mo</a>
+          <a href="mailto:sreeni.nintendo@gmail.com?subject=Discovery%20call%20—%20BeatBook" class="btn btn--lg">Book a discovery call</a>
           <a href="#how" class="btn btn--ghost btn--lg">See how it works</a>
         </div>
-        <p class="hero__note">No app-store maze. Works on the phone in his pocket.</p>
+        <p class="hero__note">No app-store maze. Works on the phone in his pocket. &middot; subscription &middot; pricing on discovery</p>
       </div>
 
       <!-- Signature: the live "beat strip" — a walked route of stops -->
@@ -272,10 +389,11 @@
     <div class="pricing">
       <div class="pricing__copy">
         <span class="stop-num stop-num--light">Stop 06 &middot; Pricing</span>
-        <h2 id="pricing-title">One price. Per salesman. Per route.</h2>
+        <h2 id="pricing-title">Pricing on discovery, per salesman.</h2>
         <p>
-          Recover a <em>single</em> forgotten Rs 600 due in a month and BeatBook has already paid for itself.
-          Most reps carry dozens of open balances at once &mdash; the report alone stops the slow bleed.
+          We set pricing on a short discovery call and bill it as a simple monthly subscription &mdash;
+          sized to your route setup. Early users get founder terms. Recover a <em>single</em> forgotten
+          due in a month and BeatBook has already paid for itself.
         </p>
         <ul class="pricing__list">
           <li>Unlimited retailers and daily beats</li>
@@ -286,10 +404,10 @@
       </div>
       <div class="pricecard">
         <p class="pricecard__plan">BeatBook</p>
-        <p class="pricecard__price"><span class="pricecard__cur">Rs</span><span class="pricecard__num mono">599</span></p>
-        <p class="pricecard__per">per salesman / month</p>
-        <a href="mailto:sreeni.nintendo@gmail.com?subject=BeatBook%20trial" class="btn btn--lg btn--block">Start the beat</a>
-        <p class="pricecard__fine">No card to try. Cancel anytime.</p>
+        <p class="pricecard__price"><span class="pricecard__num pricecard__num--text">Pricing on discovery</span></p>
+        <p class="pricecard__per">Subscription basis</p>
+        <a href="mailto:sreeni.nintendo@gmail.com?subject=Discovery%20call%20—%20BeatBook" class="btn btn--lg btn--block">Book a discovery call</a>
+        <p class="pricecard__fine">A quick call to size it to your route.</p>
       </div>
     </div>
   </section>
@@ -319,6 +437,10 @@
         <details class="qa">
           <summary>What does the owner see at day end?</summary>
           <p>Coverage (planned vs visited), total outstanding across the route, and the day&rsquo;s collection &mdash; shop-wise. The two reports the boss asks for, without anyone tallying a diary.</p>
+        </details>
+        <details class="qa">
+          <summary>What does BeatBook cost?</summary>
+          <p>Pricing is worked out on a quick discovery call and billed monthly on subscription. We&rsquo;re keeping public prices off the page while we onboard our first users.</p>
         </details>
       </div>
     </div>

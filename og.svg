@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="BeatBook — cover the beat, collect the dues. A KARYA studio build.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1F26"/>
+      <stop offset="1" stop-color="#0E2A33"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0891B2"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Accent edge -->
+  <rect x="0" y="0" width="14" height="630" fill="url(#accent)"/>
+
+  <!-- Faint beat strip in background (signature route mark) -->
+  <g opacity="0.14" stroke="#0891B2" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M760 470 L860 300 L960 400 L1080 210"/>
+  </g>
+  <g opacity="0.22" fill="#0891B2">
+    <circle cx="760" cy="470" r="12"/>
+    <circle cx="860" cy="300" r="12"/>
+    <circle cx="960" cy="400" r="12"/>
+    <circle cx="1080" cy="210" r="12"/>
+  </g>
+
+  <!-- Brand lockup -->
+  <g transform="translate(90, 96)">
+    <g stroke="url(#accent)" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 56 L20 6 L38 42 L62 0"/>
+    </g>
+    <g fill="#0891B2">
+      <circle cx="0" cy="56" r="7"/>
+      <circle cx="20" cy="6" r="7"/>
+      <circle cx="38" cy="42" r="7"/>
+      <circle cx="62" cy="0" r="7"/>
+    </g>
+    <text x="86" y="46" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700" fill="#F7F5EF">BeatBook</text>
+  </g>
+
+  <!-- Eyebrow -->
+  <text x="90" y="250" font-family="'Courier New', monospace" font-size="24" letter-spacing="3" fill="#06B6D4">BEAT PLANNING &amp; DUES · ROUTE SALES</text>
+
+  <!-- Headline -->
+  <text x="88" y="340" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700" fill="#F7F5EF">Cover the beat,</text>
+  <text x="88" y="426" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700" fill="#22D3EE">collect the dues.</text>
+
+  <!-- Tagline -->
+  <text x="90" y="496" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#C7D2D6">Daily beats, order booking &amp; live retailer outstanding —</text>
+  <text x="90" y="536" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#C7D2D6">the distributor beat app for van sales in India.</text>
+
+  <!-- KARYA wordmark -->
+  <text x="90" y="596" font-family="'Courier New', monospace" font-size="22" letter-spacing="4" fill="#7C9299">A KARYA STUDIO BUILD</text>
+</svg>

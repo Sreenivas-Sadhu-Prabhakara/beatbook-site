@@ -291,6 +291,7 @@ em{ font-style:normal; color:var(--accent-deep); font-weight:600; }
 .pricecard__price{ display:flex; align-items:baseline; justify-content:center; gap:.25rem; margin:.5rem 0 .1rem; }
 .pricecard__cur{ font-size:1.3rem; font-weight:700; color:var(--ink-soft); }
 .pricecard__num{ font-size:3.7rem; font-weight:800; letter-spacing:-.03em; }
+.pricecard__num--text{ font-size:1.6rem; line-height:1.15; letter-spacing:-.01em; color:var(--accent-deep); }
 .pricecard__per{ color:var(--ink-soft); font-size:.92rem; margin-bottom:1.4rem; }
 .pricecard__fine{ margin-top:.8rem; font-size:.8rem; color:var(--ink-soft); }
 @media (max-width:760px){ .pricing{ grid-template-columns:1fr; } }
